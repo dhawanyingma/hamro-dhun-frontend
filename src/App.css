@@ -1,0 +1,131 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: var(--accent);
+  color: var(--on-accent);
+}
+
+.navbar__brand{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.song-lyrics {
+  white-space: pre-line;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+#song-search {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background-color: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+input:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+.song-list{
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 12px 16px;
+}
+.song-list-item{
+  text-align: left;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.song-list-item::marker {
+  font-weight: bold;
+}
+
+.song-list-info{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+.song-list-info h3,
+.song-list-info p{
+  margin: 0;
+}
+
+.song-list-button,
+.navbar button {
+  padding:10px 16px;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+.song-list-button{
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
+  color: var(--on-accent);
+}
+
+.navbar button {
+border: 1px solid var(--on-accent);
+background-color: transparent;
+color: var(--on-accent);
+}
+
+.song-list-button:hover {
+  border-color: var(--accent-border);
+  background-color: var(--accent-bg);
+  color: var(--text-h);
+}
+.navbar button:hover {
+  border-color: var(--on-accent);
+  background-color: var(--on-accent);
+  color: var(--accent);
+}
+
+.song-details{
+  width: calc(100% - 32px);
+  max-width: 700px;
+  box-sizing: border-box;
+  margin: 24px auto;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--bg);
+  text-align: left;
+}
+
+.song-details_title {
+  margin-bottom: 4px;
+}
+
+.song-details_artist {
+  margin-bottom: 24px;
+  color: var(--text);
+}
+
+.song-details_section-title {
+  margin-bottom: 8px;
+}
+
+.song-details_chords {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: var(--code-bg);
+  color: var(--text);
+}
